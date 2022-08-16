@@ -14,6 +14,7 @@ form.addEventListener("submit", (e) => {
 
 function renderList(data) {
     // loop here 
+    recipeList.innerHTML = ''
     data.forEach(recipe => {
         console.log(recipe)
         const recipeName = recipe.title
