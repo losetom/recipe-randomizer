@@ -1,5 +1,4 @@
 const url = "https://api.spoonacular.com/recipes/716429/information?apiKey=5f51aa6b837e450d9e17ee709b954584"
-// const recipeUrl = "https://api.spoonacular.com/recipes/random"
 const recipeList = document.getElementById("recipeList")
 const form = document.getElementById("abc")
 
@@ -13,7 +12,6 @@ form.addEventListener("submit", (e) => {
 }) 
 
 function renderList(data) {
-    // loop here 
     recipeList.innerHTML = ''
     data.forEach(recipe => {
         console.log(recipe)
@@ -24,8 +22,5 @@ function renderList(data) {
     })
 }
 
-// fetch(url)
-//  .then(r => r.json())
-//  .then(data => console.log(data))
 
 
